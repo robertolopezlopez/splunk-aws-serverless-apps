@@ -4,7 +4,7 @@
   "description": "AWS Lambda function blueprint to stream events from AWS CloudWatch Logs to Splunk's HTTP event collector",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint -c ../.eslintrc --ignore-path ../.eslintignore .",
+    "lint": "eslint -c ../.eslintrc --ignore-pattern ../.eslintignore .",
     "test": "node integration-test.js",
     "pretest": "npm run lint",
     "build:zip": "zip -i \\*.js \\*.json -r splunk-cloudwatch-logs-processor.zip index.js $(npm list --prod --parseable | sed -nE 's/.*\\/(node_modules\\/.*)/\\1/p' | awk '{printf \"%s \", $0;}')",
@@ -37,9 +37,9 @@
     "@babel/eslint-parser": "^7.25.8",
     "eslint": "^9.13.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-babel": "^4.0.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^6.10.0",
-    "eslint-plugin-react": "^7.36.1"
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.1",
+    "eslint-plugin-react": "^7.37.1"
   }
 }
