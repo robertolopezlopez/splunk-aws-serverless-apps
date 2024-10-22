@@ -33,8 +33,9 @@
     "splunk-logging": "^0.11.1"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^9.10.0",
+    "@babel/core": "^7.25.8",
+    "@babel/eslint-parser": "^7.25.8",
+    "eslint": "^9.13.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-babel": "^4.0.0",
     "eslint-plugin-import": "^2.2.0",
